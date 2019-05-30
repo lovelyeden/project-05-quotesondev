@@ -71,3 +71,20 @@ table {
   margin: 0 0 $base__space-unit;
   width: 100%;
 }
+
+/* Font Awesome Icons */
+.content-area::before {
+  font-family: "FontAwesome";
+  color:#00cc00;
+  content: "\f10d";
+  font-size: 8rem;
+  display: none;
+}
+.content-area::after {
+  font-family: "FontAwesome";
+  color:#00cc00;
+  content: "\f10e";
+  font-size: 8rem;
+  display: none;
+}
+
