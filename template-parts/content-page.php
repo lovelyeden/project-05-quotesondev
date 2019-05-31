@@ -21,4 +21,8 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
+
+		<p>This site is heavily inspired by Chris Coyier’s
+		<a href="http: //quotesondesign.com/">Quotes on Design.</a>
+</p>
 </article><!-- #post-## -->

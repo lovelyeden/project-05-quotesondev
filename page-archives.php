@@ -39,7 +39,7 @@ get_header();?>
     </div>
         
 
-    <div class="taf-archives">
+    <div class="tag-archives">
         <h2>Tags</h2>
         <?php 
             wp_tag_cloud( array(

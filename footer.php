@@ -20,9 +20,10 @@
 
 		<div class="red-link">
 
-		</p>Brought to you by
+		<p>Brought to you by
 		<a href="https://redacademy.com/vancouver/">RED Academy</a>
-	
+</p>
+
 		</div>
 		
 		</footer><!-- #colophon -->

@@ -381,6 +381,9 @@ table {
   content: "\f10d";
   font-size: 8rem;
   display: none; }
+  @media (min-width: 1080px) {
+    .content-area::before {
+      display: block; } }
 
 .content-area::after {
   font-family: "FontAwesome";
@@ -388,6 +391,9 @@ table {
   content: "\f10e";
   font-size: 8rem;
   display: none; }
+  @media (min-width: 1080px) {
+    .content-area::after {
+      display: block; } }
 
 /*--------------------------------------------------------------
 # Forms
@@ -533,6 +539,14 @@ a {
 .main-navigation li:last-child {
   border-right: 0; }
 
+.red-link p {
+  font-size: 1rem; }
+  .red-link p a {
+    text-decoration: none;
+    padding-left: 1em;
+    color: #00cc00;
+    font-size: 1rem; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -630,6 +644,12 @@ a {
     display: flex;
     margin-bottom: 3em; }
 
+@media (min-width: 1080px) {
+  .site-content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; } }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -651,4 +671,26 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* All Archives Page */
+.site-main {
+  padding: 0; }
+
+.post-archives ul, .category-archives ul, .tag-archives ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 0; }
+  .post-archives ul li, .category-archives ul li, .tag-archives ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .post-archives ul li a, .category-archives ul li a, .tag-archives ul li a {
+      text-decoration: none;
+      font-size: 1rem;
+      margin-bottom: .5rem;
+      margin-right: 1.125rem; }
+
 /* Submit a Quote Page */

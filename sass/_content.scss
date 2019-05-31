@@ -24,7 +24,7 @@
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: $base__space-unit 0 0;
+	margin: $base__space-unit 0 0;
 }
 
 .page-links {
@@ -39,11 +39,16 @@
   .site-header {
     margin-top: 3em;
     .entry-content {
-      font-size: 1.25rem;
+			font-size: 1.25rem;
     }
 	}
 			.entry-meta{
 			display: flex;
 			margin-bottom:3em;
 		}
+}
+.site-content{
+	@include desktop{
+		@include center-block
+	}
 }
