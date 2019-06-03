@@ -143,9 +143,6 @@ a {
 
 .blog {
   a {
-    font-size: 1.25rem;
-    @include tablet {
-      font-size: 1.25rem;
-    }
+    font-size: 1rem;
   }
 }

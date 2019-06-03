@@ -1,12 +1,12 @@
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 
 .site-navigation {
-  
+  flex-wrap: wrap;
   @include tablet {
     display: flex;
+    flex-wrap: wrap;
   }
   .menu {
     list-style: none;
@@ -41,9 +41,9 @@
   margin-top: 1em;
   font-size: 1rem;
   @include tablet {
-    margin-top: 0.6em;
-  }
-  @include desktop{
     padding-left: 2%;
+    @include desktop {
+      padding-left: 2%;
+    }
   }
 }
