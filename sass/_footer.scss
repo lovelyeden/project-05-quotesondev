@@ -1,0 +1,42 @@
+.site-navigation {
+  flex-wrap: wrap;
+  @include tablet {
+    display: flex;
+  }
+  .menu {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    margin: 1rem 0 0;
+    li {
+      border-right: 1px solid #fff;
+      line-height: 1;
+      padding: 0 1rem;
+    }
+  }
+}
+
+.site-navigation li:first-child {
+  padding-left: 0;
+}
+.site-navigation li:last-child {
+  border-right: 0;
+  @include tablet {
+    border-right: solid 1px #fff;
+  }
+}
+.site-footer {
+  display: flex;
+  @include desktop {
+    justify-content: flex-end;
+  }
+}
+
+.site-navigation p {
+  margin-top: 1em;
+  font-size: 1rem;
+  @include tablet {
+    margin-top: 0.9em;
+    padding-left: 4%;
+  }
+}

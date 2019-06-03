@@ -14,11 +14,25 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
-			<?php the_post_navigation(); ?>
-
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+	<div class="entry-meta">
+		<?php the_title('<h2 class="entry-title">&mdash;', '<h2>'); ?>
+		<?php if( $source && $source_url ): ?>
+			<span class="source">,
+				<a href="<?php echo $source_url; ?>">
+				<?php echo $source; ?>
+				</a>
+			</span>
+		
+		<?php elseif ( $source ): ?>
+			<span class="source"><?php echo $source; ?></span>
+		<?php else: ?>
+			<span class="source"></span>
+		<?php endif; ?>
+	</div> 
+<button type="button" id="new-quote-button">Show Me Another!</button>
 <?php get_footer(); ?>

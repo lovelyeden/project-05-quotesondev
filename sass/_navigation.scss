@@ -5,160 +5,147 @@
 /* Links */
 
 a {
-	color: $color__link;
+  color: $color__link;
+  text-decoration: none;
 
-	&:visited {
-		color: $color__link-visited;
-	}
-	&:hover,
-	&:focus,
-	&:active {
-		color: $color__link-hover;
-	}
-	&:focus {
-		outline: thin dotted;
-	}
-	&:hover,
-	&:active {
-		outline: 0;
-	}
+  &:visited {
+    color: $color__link-visited;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color__link-hover;
+    color: #090;
+  }
+  &:focus {
+    outline: thin dotted;
+  }
+  &:hover,
+  &:active {
+    outline: 0;
+    color: #090;
+  }
 }
 
 /* Menus */
 
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+  clear: both;
+  display: block;
+  float: left;
+  width: 100%;
 
-	ul {
-		display: none;
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
+  ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
 
-		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: absolute;
-			top: $base__space-unit;
-			left: -999rem;
-			z-index: 99999;
+    ul {
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+      float: left;
+      position: absolute;
+      top: $base__space-unit;
+      left: -999rem;
+      z-index: 99999;
 
-			ul {
-				left: -999rem;
-				top: 0;
-			}
+      ul {
+        left: -999rem;
+        top: 0;
+      }
 
-			li {
-				&:hover > ul,
-				&.focus > ul {
-					left: 100%;
-				}
-			}
+      li {
+        &:hover > ul,
+        &.focus > ul {
+          left: 100%;
+        }
+      }
 
-			a {
-				width: 200px;
-			}
+      a {
+        width: 200px;
+      }
 
-			:hover > a,
-			.focus > a {
-			}
+      :hover > a,
+      .focus > a {
+      }
 
-			a:hover,
-			a.focus {
-			}
-		}
+      a:hover,
+      a.focus {
+      }
+    }
 
-		li:hover > ul,
-		li.focus > ul {
-			left: auto;
-		}
-	}
-	li {
-		float: left;
-		position: relative;
-		padding:0 2em 0 2em;
-		border-right:1px solid #fff;
-		
+    li:hover > ul,
+    li.focus > ul {
+      left: auto;
+    }
+  }
+  li {
+    float: left;
+    position: relative;
+    padding: 0 2em 0 2em;
+    border-right: 1px solid #fff;
 
-		&:hover > a,
-		&.focus > a {
-		}
-	}
-	a {
-		display: block;
-						text-decoration: none;
-						color:$color__link;
-		
-					
-	}
+    &:hover > a,
+    &.focus > a {
+    }
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    color: $color__link;
+  }
 
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
-	}
+  .current_page_item > a,
+  .current-menu-item > a,
+  .current_page_ancestor > a {
+  }
 }
 
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
+  .menu-toggle {
+    display: none;
+  }
+  .main-navigation ul {
+    display: block;
+  }
 }
 
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
+  .site-main & {
+    margin: 0 0 $base__space-unit;
+    overflow: hidden;
+  }
 
-	.site-main & {
-		margin: 0 0 $base__space-unit;
-		overflow: hidden;
-	}
+  .nav-previous {
+    float: left;
+    width: 50%;
+  }
 
-	.nav-previous {
-		float: left;
-		width: 50%;
-	}
-
-	.nav-next {
-		float: right;
-		text-align: right;
-		width: 50%;
-	}
+  .nav-next {
+    float: right;
+    text-align: right;
+    width: 50%;
+  }
 }
 
 /* Menu Toggle Hide */
 .menu-toggle {
   display: none;
 }
-.main-navigation ul {
-  display: block;
-}
 
-/* Main Navigation Link */
-.main-navigation li:first-child{
-	padding-left:0;
+.blog {
+  a {
+    font-size: 1rem;
+    @include tablet {
+      font-size: 1.25rem;
+    }
+  }
 }
-.main-navigation li:last-child{
-	border-right:0;}
-
-.red-link{
-	p{
-		font-size:1rem;
-		a{
-	text-decoration: none;
-	padding-left:1em;
-	color:$color__link;
-		font-size:1rem;
-		}
-}}

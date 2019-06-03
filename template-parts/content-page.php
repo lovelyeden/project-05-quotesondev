@@ -7,22 +7,22 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID();?>" <?php post_class();?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title('<h1 class="entry-title">', '</h1>');?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php the_content(); ?>
+		<?php the_content();?>
 		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-				'after'  => '</div>',
-			) );
+			wp_link_pages(array(
+    		'before' => '<div class="page-links">' . esc_html('Pages:'),
+    		'after' => '</div>',
+			));
 		?>
 	</div><!-- .entry-content -->
 
-		<p>This site is heavily inspired by Chris Coyier’s
+	<p>This site is heavily inspired by Chris Coyier’s
 		<a href="http: //quotesondesign.com/">Quotes on Design.</a>
-</p>
+	</p>
 </article><!-- #post-## -->

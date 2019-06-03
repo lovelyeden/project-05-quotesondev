@@ -5,53 +5,66 @@
 /* Buttons */
 
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-	border: 1px solid #0c0;
-	border-radius: 3px;
-	background:  #222222;
-	color: #0c0;
-	font-size: .75rem;
-	line-height: 1;
-	padding: .6rem 1rem .4rem;
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  border: 2px solid #0c0;
+  border-radius: 3px;
+  background: #222222;
+  color: #0c0;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 700;
+  padding: 0.75rem 2.25rem;
 
-
-	&:hover {
-		
-	}
-	&:active,
-	&:focus {
-
-	}
+  &:hover {
+  }
+  &:active,
+  &:focus {
+  }
 }
 
 /* Fields */
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 
-	&:focus {
-		color: #111;
-	}
+  &:focus {
+    color: #111;
+  }
 }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-	padding: 3px;
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'] {
+  padding: 3px;
+  background: #222222;
+  border: 2px solid #0c0;
+  border-radius: 1px;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 700;
+  padding: 0.75rem 2.25rem;
 }
 
 textarea {
-	padding-left: 3px;
-	width: 100%;
+  padding-left: 3px;
+  width: 100%;
+  background: #222222;
+  border: 2px solid #0c0;
+}
+button {
+  margin-bottom: 2em;
+  @include desktop {
+    margin-left: 40%;
+  }
 }

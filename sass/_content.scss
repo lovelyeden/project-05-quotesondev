@@ -24,7 +24,7 @@
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: $base__space-unit 0 0;
+  margin: $base__space-unit 0 0;
 }
 
 .page-links {
@@ -35,20 +35,73 @@
 /*Site*/
 .site-main {
   padding: 2.5%;
-  width: 100%;
+  margin: 0 auto;
+  max-width: 1080px;
+  @include desktop {
+    margin: 2%;
+  }
+
   .site-header {
     margin-top: 3em;
     .entry-content {
-			font-size: 1.25rem;
+      font-size: 1.25rem;
     }
-	}
-			.entry-meta{
-			display: flex;
-			margin-bottom:3em;
-		}
+  }
+  .entry-meta {
+    display: flex;
+    margin-bottom: 3em;
+    @include desktop {
+      margin: 5%;
+    }
+  }
 }
-.site-content{
-	@include desktop{
-		@include center-block
-	}
+
+.entry-title {
+  a {
+    text-decoration: none;
+  }
+}
+
+.blog {
+  .entry-title {
+    margin-top: 0.5em;
+    font-size: 1.25rem;
+  }
+}
+
+.blog,
+.entry-meta,
+.source {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+.entry-meta {
+  h2 {
+    margin-top: 0;
+  }
+}
+.single {
+  .entry-title {
+    margin-top: 0.5em;
+    font-size: 1.25rem;
+  }
+}
+
+.archive .entry-content p,
+.blog .entry-content p,
+.single .entry-content p {
+  font-size: 1.25rem;
+  @include tablet {
+    font-size: 1.75rem;
+  }
+  @include desktop {
+    font-size: 2.5rem;
+    margin: 5%;
+  }
+}
+
+.content-area {
+  @include desktop {
+    display: flex;
+  }
 }
