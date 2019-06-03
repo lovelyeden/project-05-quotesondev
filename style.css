@@ -482,6 +482,16 @@ button {
     button {
       margin-left: 40%; } }
 
+.error404 fieldset {
+  border: none;
+  padding: 0;
+  margin-bottom: 4em; }
+
+.error404 .search-submit {
+  margin: 0;
+  border: 0;
+  padding: 1em; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -575,7 +585,7 @@ a {
   display: none; }
 
 .blog a {
-  font-size: 1rem; }
+  font-size: 1.25rem; }
   @media (min-width: 620px) {
     .blog a {
       font-size: 1.25rem; } }
@@ -670,7 +680,7 @@ a {
   max-width: 1080px; }
   @media (min-width: 1080px) {
     .site-main {
-      margin: 2%; } }
+      margin: auto; } }
   .site-main .site-header {
     margin-top: 3em; }
     .site-main .site-header .entry-content {
@@ -798,25 +808,26 @@ object {
   margin-top: 0.6em; }
 
 /* Submit a Quote Page */
-.site-navigation {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  @media (min-width: 620px) {
-    .site-navigation {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; } }
-  .site-navigation .menu {
-    list-style: none;
-    padding: 0;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    margin: 1rem 0 0; }
-    .site-navigation .menu li {
-      border-right: 1px solid #fff;
-      line-height: 1;
-      padding: 0 1rem; }
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+@media (min-width: 620px) {
+  .site-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.site-navigation .menu {
+  list-style: none;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 1rem 0 0; }
+  .site-navigation .menu li {
+    border-right: 1px solid #fff;
+    line-height: 1;
+    padding: 0 1rem; }
 
 .site-navigation li:first-child {
   padding-left: 0; }
@@ -842,5 +853,7 @@ object {
   font-size: 1rem; }
   @media (min-width: 620px) {
     .site-navigation p {
-      margin-top: 0.9em;
-      padding-left: 4%; } }
+      margin-top: 0.6em; } }
+  @media (min-width: 1080px) {
+    .site-navigation p {
+      padding-left: 2%; } }

@@ -38,7 +38,7 @@
   margin: 0 auto;
   max-width: 1080px;
   @include desktop {
-    margin: 2%;
+    margin: auto;
   }
 
   .site-header {
@@ -105,3 +105,4 @@
     display: flex;
   }
 }
+
