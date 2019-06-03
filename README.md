@@ -15,16 +15,7 @@ api - user interfaces allow people to work with programs
 sass - preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS)
 
 
-### 2. Rename the `quotesondev-starter-master` directory
-
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
-
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
-
-And now would be a good time to `git init` :)
+### Learnings
+1. How to pass data from the server side to the client side by making it available in JS variables using wp_localize_script() function.
+2. How to use “nonces” to securely make Ajax requests in WordPress.
+3. How to identify the core use cases for the WP REST API plugin, install the plugin, and use it to update post data from the front-end of a website via an Ajax request.
